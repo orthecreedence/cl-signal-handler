@@ -18,7 +18,7 @@ handler for each signal processed.
 Execute a block of code with the specific signal handler in place, and revert
 back to the original handler after executing:
 
-    (with-signal-handler 2 (lamda () (format t "Sorry, SIGINT not allowed while I'm counting!~%"))
+    (with-signal-handler 2 (lambda () (format t "Sorry, SIGINT not allowed while I'm counting!~%"))
 	  (dotimes (i 10)
 	    (format t "I'm counting: ~a~%" i)
 		(sleep 1)))
@@ -35,6 +35,3 @@ are leaving the safety of lisp and entering a world of unknowns (unless you are
 a C expert ;]) and must tread carefully. Please read
 [this guide on signal handling in C](http://www.gnu.org/software/libc/manual/html_node/Defining-Handlers.html#Defining-Handlers)
 before using.
-
-Chances are when things break for me when using this library, I'll update it to
-make it easier to play nicely with C land. Until then, use at your own risk.
