@@ -8,7 +8,7 @@
 ;;; Although I'm no expert in C and cannot recommend best practices for this
 ;;; library (sorry!!), I can point you to an excellent resource:
 ;;;
-;;;   http://www.cs.utah.edu/dept/old/texinfo/glibc-manual-0.02/library_21.html
+;;;   http://www.gnu.org/software/libc/manual/html_node/Defining-Handlers.html#Defining-Handlers
 ;;;
 ;;; See full documentation at
 ;;;
